@@ -13,7 +13,7 @@ public class TipCalculator {
         scan.nextLine();
 
         System.out.print("What's the tip percentage? (0-100): "); //tip percentage
-        int tip = scan.nextInt();
+        double tip = scan.nextDouble();
         scan.nextLine();
 
 
@@ -38,7 +38,7 @@ public class TipCalculator {
         String formattedPerPersonTipCost = formatter.format(perPersonTipCost);
 
         System.out.println("Total Bill Before Tip: " + itemCost);
-        System.out.println("Tip Percentage: " + tip);
+        System.out.println("Tip Percentage: " + (int) tip);
         System.out.println("Total Tip: " + formattedTip);
         System.out.println("Total Bill with Tip: " + (itemCost + totalTip));
         System.out.println("Per Person Cost Before Tip: " + formattedCostBeforeTip);
